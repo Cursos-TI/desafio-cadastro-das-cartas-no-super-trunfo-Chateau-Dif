@@ -29,10 +29,22 @@ float PIB1;
 
 float Área1;
 
+
+
 printf("Bem vindo ao Super Trunfo!\n Crie seu competidor logo abaixo!\n"); //uma mensagem de boas vindas, na minha opinião, é uma boa forma de começar
 
 printf("Digite o Estado de onde é sua Cidade: ");
-scanf("%s", &Estado1);
+scanf("%s",&Estado1);
+
+printf("\n Agora o nome da sua Cidade: ");
+scanf("%s",&Cidade1);
+
+printf("\n Qual a população desse local?"); 
+scanf("%i",&População1);
+//já que o nome já foi dado, poderia colocar a pergunta "qual a população de (Cidade1)?"
+
+printf("\n Qual o tamanho dessa Cidade?"); 
+scanf("%f",&Área1);
 
     return 0;
 }
