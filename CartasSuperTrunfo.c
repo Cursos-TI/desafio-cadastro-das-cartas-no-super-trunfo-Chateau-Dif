@@ -1,19 +1,8 @@
 #include <stdio.h>
 
 //Tava querendo fazer na temática de Game of Thrones, talvez mais pra frente.
-//Não apaguei os comentários do desafio.
 
 int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade. (Feito)
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos. (Feito)
-    
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
 
 char Estado1 [10];
 
@@ -40,7 +29,7 @@ scanf("%s",&Cidade1);
 
 printf("\n Qual a população desse local? "); 
 scanf("%i",&População1);
-//já que o nome já foi dado, poderia colocar a pergunta "qual a população de (Cidade1)?"
+//já que o nome já foi dado, poderia colocar a pergunta "qual a população de %s", (Cidade1)?"
 
 printf("\n Qual o tamanho dessa Cidade? "); 
 scanf("%f",&Área1);
