@@ -1,25 +1,28 @@
 #include <stdio.h>
 
-//Tava querendo fazer na temática de Game of Thrones, talvez mais pra frente.
 
 int main() {
 
-char Estado1 [10];
+char Estado1 [10] = 0;
 
-char Codigo1 [10];
+char Codigo1 [10] = 0;
 
-char Cidade1 [10];
+char Cidade1 [10] = 0;
 
-int Atrações1; //Atrações = Pontos Turísticos. nome alterado pela facilidade de utilizar palavra única.
+int Atrações1 = 0; //Atrações = Pontos Turísticos. nome alterado pela facilidade de utilizar palavra única.
 
-int População1;
+int População1 = 0;
 
-float PIB1;
+float PIB1 = 0;
 
-float Área1;
+float Área1 = 0;
+
+float Densidade1 = 0;
+
+float Capital1 = 0;
 
 
-printf("Bem vindo ao Super Trunfo!\n Crie seu competidor logo abaixo!\n"); //uma mensagem de boas vindas, na minha opinião, é uma boa forma de começar
+printf("Bem vindo ao Super Trunfo!\n Crie seu competidor logo abaixo!\n");
 
 printf("Digite o Estado de onde é sua Cidade: ");
 scanf("%s",&Estado1);
@@ -29,7 +32,6 @@ scanf("%s",&Cidade1);
 
 printf("\n Qual a população desse local? "); 
 scanf("%i",&População1);
-//já que o nome já foi dado, poderia colocar a pergunta "qual a população de %s", (Cidade1)?"
 
 printf("\n Qual o tamanho dessa Cidade? "); 
 scanf("%f",&Área1);
@@ -40,28 +42,35 @@ scanf("%f",&Atrações1);
 printf("\n Qual, mais ou menos, é o produto interno bruto dessa cidade? "); 
 scanf("%f",&PIB1);
 
+Capital1 = PIB1 / População1;
+Densidade1 = População1 / Área1;
 
 
 
 
-char Estado2 [10];
 
-char Codigo2 [10];
+char Estado2 [10] = 0;
 
-char Cidade2 [10];
+char Codigo2 [10] = 0;
 
-int Atrações2;
+char Cidade2 [10] = 0;
 
-int População2;
+int Atrações2 = 0;
 
-float PIB2;
+int População2 = 0;
 
-float Área2;
+float PIB2 = 0;
+
+float Área2 = 0;
+
+float Densidade2 = 0;
+
+float Capital2 = 0;
 
 
 printf("\n\n\n Agora é hora de criar seu Adversário!\n" );
 
-printf("Digite o Estado de onde é sua Cidade: ");
+printf(" Digite o Estado de onde é sua Cidade: ");
 scanf("%s",&Estado2);
 
 printf("\n Agora o nome da sua Cidade: ");
@@ -79,6 +88,9 @@ scanf("%f",&Atrações2);
 printf("\n Qual, mais ou menos, é o produto interno bruto dessa cidade? "); 
 scanf("%f",&PIB2);
 
+Capital2 = PIB2 / População2;
+Densidade2 = População2 / Área2;
+
 
 printf("\n\n Agora que as cartas estão cadastradas, vamos a suas características!\n");
 
@@ -94,15 +106,19 @@ printf("   População: %i\n", População1);
 
 printf("   Área: %f\n", Área1);
 
+printf("   Densidade Populacional: %f/n", Densidade1);
+
 printf("   Pontos Turísticos: %f\n", Atrações1);
 
 printf("   PIB: %f\n\n\n\n\n", PIB1);
 
+printf("   PIB per Capita: %f\n", Capital1);
 
 
-printf("\n Carta Número 1 (Código C2)\n\n");
 
-printf("   Nome: %s\n", Cidade1);
+printf("\n Carta Número 2 (Código C2)\n\n");
+
+printf("   Nome: %s\n", Cidade2);
 
 printf("   Código: C2\n");
 
@@ -112,9 +128,13 @@ printf("   População: %i\n", População2);
 
 printf("   Área: %f\n", Área2);
 
+printf("   Densidade Populacional: %f/n", Densidade2);
+
 printf("   Pontos Turísticos: %f\n", Atrações2);
 
 printf("   PIB: %f\n\n\n", PIB2);
+
+printf("   PIB per Capita: %f\n", Capital2);
 
     return 0;
 
