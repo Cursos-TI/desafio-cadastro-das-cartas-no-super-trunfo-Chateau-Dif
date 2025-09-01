@@ -3,23 +3,23 @@
 
 int main() {
 
-char Estado1 [10] = 0;
+char Estado1 [10];
 
-char Codigo1 [10] = 0;
+char Codigo1 [10];
 
-char Cidade1 [10] = 0;
+char Cidade1 [10];
 
-int Atrações1 = 0; //Atrações = Pontos Turísticos. nome alterado pela facilidade de utilizar palavra única.
+int Atrações1; //Atrações = Pontos Turísticos. nome alterado pela facilidade de utilizar palavra única.
 
-int População1 = 0;
+int População1;
 
-float PIB1 = 0;
+float PIB1;
 
-float Área1 = 0;
+float Área1;
 
-float Densidade1 = 0;
+float Densidade1;
 
-float Capital1 = 0;
+float Capital1;
 
 
 printf("Bem vindo ao Super Trunfo!\n Crie seu competidor logo abaixo!\n");
@@ -33,7 +33,7 @@ scanf("%s",&Cidade1);
 printf("\n Qual a população desse local? "); 
 scanf("%i",&População1);
 
-printf("\n Qual o tamanho dessa Cidade? "); 
+printf("\n Qual o tamanho dessa Cidade? (Em Metros) "); 
 scanf("%f",&Área1);
 
 printf("\n Quantos Pontos Turísticos tem essa cidade? "); 
@@ -49,23 +49,23 @@ Densidade1 = População1 / Área1;
 
 
 
-char Estado2 [10] = 0;
+char Estado2 [10];
 
-char Codigo2 [10] = 0;
+char Codigo2 [10];
 
-char Cidade2 [10] = 0;
+char Cidade2 [10];
 
-int Atrações2 = 0;
+int Atrações2;
 
-int População2 = 0;
+int População2;
 
-float PIB2 = 0;
+float PIB2;
 
-float Área2 = 0;
+float Área2;
 
-float Densidade2 = 0;
+float Densidade2;
 
-float Capital2 = 0;
+float Capital2;
 
 
 printf("\n\n\n Agora é hora de criar seu Adversário!\n" );
@@ -79,7 +79,7 @@ scanf("%s",&Cidade2);
 printf("\n Qual a população desse local? "); 
 scanf("%i",&População2);
 
-printf("\n Qual o tamanho dessa Cidade? "); 
+printf("\n Qual o tamanho dessa Cidade? (Em Metros) "); 
 scanf("%f",&Área2);
 
 printf("\n Quantos Pontos Turísticos tem essa cidade? "); 
@@ -106,13 +106,13 @@ printf("   População: %i\n", População1);
 
 printf("   Área: %f\n", Área1);
 
-printf("   Densidade Populacional: %f/n", Densidade1);
+printf("   Densidade Populacional: %f\n", Densidade1);
 
 printf("   Pontos Turísticos: %f\n", Atrações1);
 
-printf("   PIB: %f\n\n\n\n\n", PIB1);
+printf("   PIB: %f\n", PIB1);
 
-printf("   PIB per Capita: %f\n", Capital1);
+printf("   PIB per Capita: %f\n\n\n\n\n", Capital1);
 
 
 
@@ -128,13 +128,13 @@ printf("   População: %i\n", População2);
 
 printf("   Área: %f\n", Área2);
 
-printf("   Densidade Populacional: %f/n", Densidade2);
+printf("   Densidade Populacional: %f\n", Densidade2);
 
 printf("   Pontos Turísticos: %f\n", Atrações2);
 
-printf("   PIB: %f\n\n\n", PIB2);
+printf("   PIB: %f\n", PIB2);
 
-printf("   PIB per Capita: %f\n", Capital2);
+printf("   PIB per Capita: %f\n\n\n", Capital2);
 
     return 0;
 
